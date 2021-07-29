@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>\
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d6071fdab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="heading"><h1>TODO APP</h1><hr></div>
+    <form id="form" action="/create" method="POST">  
+        <div id="discription">
+            <label for="disc">DESCRIPTION</label>
+            <input type="text" name="discrption" id="disc" style="text-transform: capitalize;" placeholder="What do you need to do ?" >
+        </div>
+
+        <div><hr></div>
+    
+        <div id="div2">
+            <div id="cate">
+                <label for="cartegory">CHOOSE A CATEGORY</label >
+
+                <select name="cars" id="cartegory">
+                    <option value="">choose a category</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Cleaning">Cleaning</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div id="date">
+                <label for="dateop">DUE DATE</label>
+                <input type="date" name="date" id="dateop">
+            </div>
+        </div>
+
+            <div><hr></div>
+            <div id="butto">
+                <button id="bt1" formmethod="post"><i class="fas fa-plus"></i>ADD TASK</button>
+                <button id="bt2" ><i class="fas fa-trash"></i><a href="url"></a>DELETE TASK</button>
+            </div>
+    </form>
+    <div><hr></div>    
+            <% for(let i of data){%>
+                <div id="wrapperbelow">
+                    <div id="left">
+                        <input type="checkbox" class="check" name="check1" onclick="findit()" value="<%= i._id%>">
+                        <div id="wrapleft">
+                            <label for="check" style="text-transform: capitalize;"><%= i.description%></label><br>
+                            <div id="check"><i class="fas fa-calendar-week"></i><%= i.date %></div>
+                        </div>
+                    </div> 
+                    <div id="right" style="background-color:rgb(69,67,69)">
+                        <%= i.category %>
+                    </div>
+                </div>
+                <div><hr></div>
+            <%}%>
+        </div>
+    </div>
+<script src="/js/todo.js"></script>
+    
+
+</body>
+</html>

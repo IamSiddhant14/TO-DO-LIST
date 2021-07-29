@@ -1,0 +1,209 @@
+#wrapper{
+    height: 600px;
+    width:600px;
+    background-color: white;
+    margin:auto;
+    /* border: 1px solid black; */
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    /* font-family: sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#heading{
+    text-align: center;
+    font-size: larger;
+}
+#discription{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding-left: 7px;
+    height: 100px;
+    background: none;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; 
+}
+
+#discription:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+  }
+
+
+#disc{
+    border: none;
+    outline: none;
+    background: none;
+    margin-bottom: 2px;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out; 
+}
+
+#disc:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#div2{
+    display:flex;
+    justify-content:space-between;   
+}
+#cate{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    padding:7px;
+    flex: 1;
+    background: none;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; 
+}
+
+#cate:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#date{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    flex: 1;
+}
+#cartegory{
+    margin-top: 8px;
+    outline: none;
+    border: none;
+    background: none;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; 
+}
+
+#cartegory:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#date{
+    margin-top: 8px;
+    outline: none;
+    border: none;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; 
+}
+
+#date:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#dateop{
+    margin-top: 8px;
+    outline: none;
+    border: none;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out; 
+}
+
+#dateop:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+#butto{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bt1{
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: rgb(69,67,69);
+    border-radius: 3px;
+    margin-right:10px ;
+    color: white;
+    width:110px;
+    opacity: 1;   
+}
+#bt1:hover{
+    opacity: 0.6
+}
+
+#bt1>i{
+    margin-right: 8px;
+}
+
+#bt2>i{
+    margin-right: 8px;
+}
+
+#bt2{
+    height: 35px;
+    background-color: rgb(234,54,33);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-right:3px ; 
+    color:white;
+    opacity: 1;  
+}
+#bt2:hover{
+    opacity: 0.6
+}
+
+#wrapperbelow{
+    display: flex;
+    justify-content:space-between;
+}
+
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#wrapleft{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+#right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border:none;
+    outline: none;
+    border-radius: 2px;
+    height: 35px;
+    width:70px;
+    margin-top: 12px;
+}
+
+#check>i{
+    margin-right:7px ;
+}
+
+
+hr{
+    opacity: 0.5;
+}
