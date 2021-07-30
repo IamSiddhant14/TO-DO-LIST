@@ -1,3 +1,5 @@
+//this function is suppose to do nothing so please ignore it
+
 function findit(){
 var url='';
   var checkedValue = null; 

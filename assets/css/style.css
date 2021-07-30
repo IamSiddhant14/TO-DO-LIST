@@ -1,3 +1,5 @@
+/* STYLE SHEET OF THE TODO LIST */
+
 #wrapper{
     height: 600px;
     width:600px;
@@ -90,7 +92,7 @@
 }
 
 #cartegory:hover{
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     cursor: pointer;
 }
 
@@ -123,10 +125,26 @@
     background-color: lightgrey;
     cursor: pointer;
 }
-#butto{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.butto{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+#a:hover{
+    background-color: blueviolet;
+}
+
+#b:hover{
+    background-color: yellowgreen;
+}
+
+#c:hover{
+    background-color:yellow;
+}
+
+#d:hover{
+    background-color:violet;
 }
 
 #bt1{
@@ -137,8 +155,12 @@
     border-radius: 3px;
     margin-right:10px ;
     color: white;
-    width:110px;
-    opacity: 1;   
+    width:130px;
+    opacity: 1;
+    display: inline;
+    position: relative;
+    left: 30%;
+    top: 15px;
 }
 #bt1:hover{
     opacity: 0.6
@@ -156,11 +178,19 @@
     height: 35px;
     background-color: rgb(234,54,33);
     border: none;
+    width:130px;
     outline: none;
     border-radius: 3px;
     margin-right:3px ; 
     color:white;
-    opacity: 1;  
+    opacity: 1;
+    left: 55%;
+    top: -20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+    /* display: inline; */
 }
 #bt2:hover{
     opacity: 0.6
