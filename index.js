@@ -72,16 +72,20 @@ app.post('/delete',function(req,res){
         })
         //for multiple checkboxes checked
     }else{
+
         for(let i of id){
-            todo.findByIdAndDelete(i,function(err){
-                if(err){
-                    console.log("Run into an error while deleting the task from the database")
-                    return
-                }
-                return res.redirect('back');
-        })
+                todo.findByIdAndDelete(i,function(err){
+                    if(err){
+                        console.log("Run into an error while deleting the task from the database")
+                        return
+                    }
+                })
+        }
+        return res.redirect('back');
+
+
     }
-  }
+  
 })
 
 
