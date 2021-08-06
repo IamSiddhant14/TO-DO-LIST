@@ -1,7 +1,7 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
-  "description": "A TO DO LIST WITH FEATURES LIKE ADDIND AND DELETING A TASK SETTING UP REMINDERS  AND MUCH MORE",
+  "description": "A TO DO LIST WITH FEATURES LIKE ADDIND AND DELETING TASK SETTING UP REMINDERS  AND MUCH MORE",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
