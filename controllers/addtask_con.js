@@ -7,8 +7,8 @@ module.exports.addtask=function(req,res){
         category:req.body.cars,
         date:req.body.date
     },function(err,newTask){
-        let date = new Date(req.body.date);
-        date: date.toDateString()
+        // let date = new Date(req.body.date);
+        // date: date.toDateString()
         if(err){
             console.log('error from create_contact',err)
             return
